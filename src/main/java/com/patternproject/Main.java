@@ -41,8 +41,6 @@ public final class Main {
 
     HumanoGuerreiro que vai ser um humano guerreiro basico
 
-    ElfoFeiticeiro que vai ser um elfo feiticeiro basico
-
     PersonagemPersonalizavel que deixar tudo personalizavel e implementar os outros metodos
     */
 }

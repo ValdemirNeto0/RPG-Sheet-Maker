@@ -33,4 +33,8 @@ public class CharacterHuman implements BuilderCharacter{
         this.characterHuman = reset();
         return characterHumanDone;
     }
+    //rola dado
+    public int rolarDado(){return this.characterHuman.rolarDado();}
+    //checa modificador
+    public int checkModifier(int n){return this.characterHuman.checkModifier(n);}
 }

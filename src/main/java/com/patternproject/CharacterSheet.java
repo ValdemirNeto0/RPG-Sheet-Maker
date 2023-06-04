@@ -1,6 +1,7 @@
 package com.patternproject;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class CharacterSheet {
     private int xp;
@@ -69,5 +70,51 @@ public class CharacterSheet {
         "\tDestreza: "+salvaguarda.get(1)+"\tConstituiçao: "+salvaguarda.get(2)+"\tInteligência: "+salvaguarda.get(3)+
         "\tSabedoria: "+salvaguarda.get(4)+"\tCarisma: "+salvaguarda.get(5)+"\nBonus de Preoficiência: "+salvaguarda.get(6)+
         "\nInspiraçao: "+salvaguarda.get(7);
+    }
+
+    public int rolarDado(){
+        Random rand = new Random();
+        int resultado;
+        int dado1,dado2,dado3,dado4;
+        dado1 = rand.nextInt(7);
+        dado2 = rand.nextInt(7);
+        dado3 = rand.nextInt(7);
+        dado4 = rand.nextInt(7);
+        if(dado1<dado2 && dado1<dado3 && dado1<dado4){
+            resultado = (dado2+dado3+dado4);
+        }else if(dado2<dado1 && dado2<dado3 && dado2<dado4){
+            resultado = (dado1+dado3+dado4);
+        }else if(dado3<dado1 && dado3<dado2 && dado3<dado4){
+            resultado = (dado1+dado2+dado4);
+        }else{
+            resultado = (dado1+dado2+dado3);
+        }
+        return resultado;
+    }
+    //checa o modificador
+    public int checkModifier(int n){
+        int modifier = 0;
+        if(n>=20){
+            modifier = 5;
+        }else if(n>=18){
+            modifier = 4;
+        }else if(n>=16){
+            modifier = 3;
+        }else if(n>=14){
+            modifier = 2;
+        }else if(n>=12){
+            modifier = 1;
+        }else if(n>=10){
+            modifier = 0;
+        }else if(n>=8){
+            modifier = -1;
+        }else if(n>=6){
+            modifier = -2;
+        }else if(n>=4){
+            modifier = -3;
+        }else{
+            modifier = -4;
+        }
+        return modifier;
     }
 }

@@ -1,11 +1,24 @@
 package com.patternproject;
+import java.util.Scanner;
 
 public final class Main {
     public static void main(String[] args) {
         Director diretor = new Director();
         CharacterSheet personagem = new CharacterSheet();
         personagem = diretor.HumanoGuerreiro();
-        System.out.println(personagem);
+        Scanner scanner = new Scanner(System.in);
+        int rodando = 1;
+        System.out.println("Personagem Humano Guerreiro ja esta criado por padrao!");
+        while(rodando == 1){
+            System.out.println("1-ver 2-sair");
+            if(scanner.nextInt() == 1){
+                System.out.println(personagem);
+            }else{
+                System.out.println("Obrigado pela atençao!");
+                rodando = 2;
+            }
+        }
+        scanner.close();
     }
 
     

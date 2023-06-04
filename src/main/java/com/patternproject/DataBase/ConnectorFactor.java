@@ -1,4 +1,4 @@
-package com.patternproject;
+package com.patternproject.DataBase;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;

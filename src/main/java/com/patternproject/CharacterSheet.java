@@ -12,13 +12,13 @@ public class CharacterSheet {
     private ArrayList <Integer> caracteristicas;
 
     //acrobacia, Arcanismo, atletismo, atuacao, blefar, furtividade, historia, intimidacao, intuicao
-    //investigacao, lidarAnimais, medicina, natureza, percepcao, persuasao, prestidigitacao, religia, survival
+    //investigacao, lidarAnimais, medicina, natureza, percepcao, persuasao, prestidigitacao, religiao, survival
     private ArrayList<Integer> pericias;
 
-    //Sforca, Sdestreza, Sconstituicao, Sinteligencia, Ssabedoria, Scharisma, BonusProeficiencia e inspiracao
+    //Sforca, Sdestreza, Sconstituicao, Sinteligencia, Ssabedoria, Scarisma, BonusProeficiencia e inspiracao
     private ArrayList<Integer> salvaguarda;
     
-    //classeArmadura, iniciativa, deslocamento, vidaAtual, vidaTemporaria, dadoVida, nSucesso, nfalhas
+    //classeArm, iniciativa, deslocamento, vidaTotal, vidaAtual, vidaTemporaria, dadoVida, nSucess, nfalhas
     private ArrayList<Integer> informacoesCombate;
 
     //get set - informacoes basicas
@@ -52,10 +52,22 @@ public class CharacterSheet {
     //get set - level
     public void setLevel(int level){this.level = level;}
     public int getLevel(){return this.level;}
-
     @Override
     public String toString(){
-        return "Nome do Personagem: "+informacoesBasicas.get(0)+"\nClasse: "+informacoesBasicas.get(1)+"\nRaça: "+informacoesBasicas.get(2)+
-        "\nAlinhamento: "+informacoesBasicas.get(3)+"\nAntecedente: "+informacoesBasicas.get(4);
+        return "\nNome do Personagem: "+informacoesBasicas.get(0)+"\nClasse: "+informacoesBasicas.get(1)+"\nRaça: "+
+        informacoesBasicas.get(2)+"\nAlinhamento: "+informacoesBasicas.get(3)+"\nAntecedente: "+
+        informacoesBasicas.get(4)+"\n\nHabilidades:\nForça: "+caracteristicas.get(0)+"\tDestreza: "+
+        caracteristicas.get(1)+"\tConstituiçao: "+caracteristicas.get(2)+"\tInteligencia: "+
+        caracteristicas.get(3)+"\tSabedoria: "+caracteristicas.get(4)+"\tCarisma: "+
+        caracteristicas.get(5)+"\n\nLista de Pericias:\nAcrobacia: "+pericias.get(0)+"\tArcanismo: "+
+        pericias.get(1)+"\tAtletismo: "+pericias.get(2)+"\tAtuacao: "+pericias.get(3)+"\tBlefar: "+
+        pericias.get(4)+"\nFurtividade: "+pericias.get(5)+"\tHistória: "+pericias.get(6)+"\tIntimidaçao: "+
+        pericias.get(7)+"\tIntuiçao: "+pericias.get(8)+"\nInvestigaçao: "+pericias.get(9)+"\tLidar com Animais: "+
+        pericias.get(10)+"\tMedicina: "+pericias.get(11)+"\tNatureza: "+pericias.get(12)+"\nPercepçao: "+
+        pericias.get(13)+"\tPersuasao: "+pericias.get(14)+"\tPrestidigitaçao: "+pericias.get(15)+"\tReligiao: "+
+        pericias.get(16)+"\nSobrevivência: "+pericias.get(17)+"\n\nSalvaguardas:\nForça: "+salvaguarda.get(0)+
+        "\tDestreza: "+salvaguarda.get(1)+"\tConstituiçao: "+salvaguarda.get(2)+"\tInteligência: "+salvaguarda.get(3)+
+        "\tSabedoria: "+salvaguarda.get(4)+"\tCarisma: "+salvaguarda.get(5)+"\nBonus de Preoficiência: "+salvaguarda.get(6)+
+        "\nInspiraçao: "+salvaguarda.get(7);
     }
 }

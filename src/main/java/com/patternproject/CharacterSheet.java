@@ -1,5 +1,4 @@
 package com.patternproject;
-
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -117,4 +116,5 @@ public class CharacterSheet {
         }
         return modifier;
     }
+    //futuro public int checkProeficiencyBonus(int level){}
 }

@@ -1,13 +1,10 @@
 package com.patternproject;
 
-import java.util.ArrayList;
-
 public interface BuilderCharacter {
     //seta as informacoes basicas necessarias
-    void setInformacoesBasicas(int xp, int level, ArrayList<String> informacoesBasicas);
+    void setInformacoesBasicas();
     //caracteristicas(forca, destreza,...), pericias e salvaguardas
-    void setPontosHabilidades(ArrayList<Integer> caracteristicas, ArrayList<Integer> pericias,
-    ArrayList<Integer> salvaguarda);
+    void setPontosHabilidades();
     //seta as informacoes de combate
-    void setInformacoesCombate(ArrayList<Integer> informacoesCombate); 
+    void setInformacoesCombate(); 
 }

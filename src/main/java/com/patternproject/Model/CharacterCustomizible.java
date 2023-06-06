@@ -1,4 +1,4 @@
-package com.patternproject;
+package com.patternproject.Model;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
@@ -10,12 +10,20 @@ public class CharacterCustomizible implements BuilderCharacter{
     private ArrayList<Integer> informacoesCombate;
     private ArrayList<Integer> caracteristicas, pericias, salvaguarda;
 
+    public CharacterCustomizible(){
+        this.characterCustomized = reset();
+    }
+    public CharacterSheet reset(){
+        return new CharacterSheet();
+    }
 
     public void setInformacoesBasicas(){}
-
     public void setPontosHabilidades(){}
-
     public void setInformacoesCombate(){}
+
+    public int rolarDado(){return this.characterCustomized.rolarDado();}
+    //checa modificador
+    public int checkModifier(int n){return this.characterCustomized.checkModifier(n);}
 }
     /*
     private CharacterSheet characterCustomizible;
@@ -49,9 +57,4 @@ public class CharacterCustomizible implements BuilderCharacter{
         CharacterSheet characterHumanDone = this.characterCustomizible;
         this.characterCustomizible = reset();
         return characterHumanDone;
-    }
-    //rola dado
-    public int rolarDado(){return this.characterCustomizible.rolarDado();}
-    //checa modificador
-    public int checkModifier(int n){return this.characterCustomizible.checkModifier(n);}
-}*/
+    }*/

@@ -1,4 +1,4 @@
-package com.patternproject;
+package com.patternproject.Model;
 import java.util.ArrayList;
 import java.util.Random;
 

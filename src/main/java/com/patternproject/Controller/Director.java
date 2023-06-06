@@ -1,4 +1,7 @@
-package com.patternproject;
+package com.patternproject.Controller;
+
+import com.patternproject.Model.CharacterHuman;
+import com.patternproject.Model.CharacterSheet;
 
 public class Director {
     //chama um construtor para fazer um humano guerreiro basico

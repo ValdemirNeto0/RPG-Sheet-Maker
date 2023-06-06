@@ -1,5 +1,8 @@
-package com.patternproject;
+package com.patternproject.View;
 import java.util.Scanner;
+
+import com.patternproject.Controller.Director;
+import com.patternproject.Model.CharacterSheet;
 
 public final class Main {
     public static void main(String[] args) {

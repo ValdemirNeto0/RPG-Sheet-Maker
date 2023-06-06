@@ -1,3 +1,4 @@
+package com.patternproject.Model;
 /*
  * Aqui servirá apenas como um guia para explicar como é feito e preenchido cada campo da ficha de jogador
  * além de mostrar como isso é traduzido neste projeto e como relacionar ao banco de dados

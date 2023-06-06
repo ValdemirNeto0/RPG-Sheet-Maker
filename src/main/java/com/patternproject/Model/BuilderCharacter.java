@@ -1,4 +1,4 @@
-package com.patternproject;
+package com.patternproject.Model;
 
 public interface BuilderCharacter {
     //seta as informacoes basicas necessarias

@@ -68,7 +68,7 @@ public class CharacterSheet {
         pericias.get(16)+"\nSobrevivência: "+pericias.get(17)+"\n\nSalvaguardas:\nForça: "+salvaguarda.get(0)+
         "\tDestreza: "+salvaguarda.get(1)+"\tConstituiçao: "+salvaguarda.get(2)+"\tInteligência: "+salvaguarda.get(3)+
         "\tSabedoria: "+salvaguarda.get(4)+"\tCarisma: "+salvaguarda.get(5)+"\nBonus de Preoficiência: "+salvaguarda.get(6)+
-        "\nInspiraçao: "+salvaguarda.get(7);
+        "\nInspiraçao: "+salvaguarda.get(7)+"\tExperiência: "+getXp()+"\tNivel: "+getLevel();
     }
 
     public int rolarDado(){

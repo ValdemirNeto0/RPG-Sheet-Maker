@@ -7,6 +7,22 @@ package com.patternproject.Model;
  * o primeiro campo preenchido sera o de nome do personagem, seguido da classe e da raça, seguido do antecedente
  * passando para o alinhamento e por fim, terminando a primeira secção com o nivel e o xp
  * 
+ * Classe disponiveis no momento:
+ * Barbaro - Bardo - Bruxo - Clerigo - Druida - Feiticeiro - Guerreiro
+ * Ladino - Mago - Monge - Paladino - Patrulheiro
+ * 
+ * Raças disponiveis no momento:
+ * Anão - Elfo - Halfling - Humano - Draconato - Gnomo - Meio-Elfo - Meio-Orc - Tiefling
+ * 
+ * Tipos de Alinhamento:
+ * Leal e Bom      Leal e Neutro     Leal e Mau
+ * Neutro e Bom    Neutro            Neutro e Mau
+ * Caotico e Bom   Caotico e Neutro  Caotico e Mau
+ * 
+ * Tipos de Antecedentes:
+ * Acolito - Artesao da Guilda - Artista - Charlatao - Criminoso - Eremita - Forasteiro - Heroi do Povo
+ * Marinheiro - Nobre - Orfao - Sabio - Soldado
+ * 
  * SEGUNDO SETOR - Caracteristicas
  * Caracteristicas sao divididas em 6: Força, Destreza, Constituição, Inteligência, Sabedoria e Carisma
  * terá a opção de ser feito de 3 formas: rolagem, determinio ou mesclagem.

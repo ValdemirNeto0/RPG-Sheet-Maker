@@ -1,24 +1,27 @@
 package com.patternproject.View;
 import java.util.Scanner;
-
 import com.patternproject.Controller.Director;
 import com.patternproject.Model.CharacterSheet;
 
 public final class Main {
     public static void main(String[] args) {
         Director diretor = new Director();
-        CharacterSheet personagem = new CharacterSheet();
-        personagem = diretor.HumanoGuerreiro();
+        CharacterSheet personagem1 = new CharacterSheet();
+        personagem1 = diretor.HumanoGuerreiro();
         Scanner scanner = new Scanner(System.in);
-        int rodando = 1;
+        int rodando = 1, opcao = 0;
         System.out.println("Personagem Humano Guerreiro ja esta criado por padrao!");
         while(rodando == 1){
-            System.out.println("1-ver 2-sair");
-            if(scanner.nextInt() == 1){
-                System.out.println(personagem);
+            System.out.println("1 - ver personagem humano guerreiro padrao\t2 - Criar novo personagem\t3 - sair");
+            opcao = scanner.nextInt();
+            if(opcao == 1){
+                System.out.println(personagem1);
+            }else if(opcao == 2){
+                CharacterSheet personagem2 = new CharacterSheet();
+                personagem2 = diretor.PersonagemCustomizavel();
+                System.out.println(personagem2);
             }else{
-                System.out.println("Obrigado pela atençao!");
-                rodando = 2;
+                System.out.println("Obrigado pela atençao!");rodando = 2;
             }
         }
         scanner.close();

@@ -3,12 +3,11 @@ import java.util.ArrayList;
 
 public class CharacterHuman implements BuilderCharacter{
     private CharacterSheet characterHuman;
-    int xp, level;
-    ArrayList<String> informacoesBasicas = new ArrayList<String>();
-    ArrayList<Integer> informacoesCombate = new ArrayList<Integer>();
-    ArrayList<Integer> caracteristicas = new ArrayList<Integer>();
-    ArrayList<Integer> pericias = new ArrayList<Integer>();
-    ArrayList<Integer> salvaguarda = new ArrayList<Integer>();
+    private ArrayList<String> informacoesBasicas = new ArrayList<String>();
+    private ArrayList<Integer> informacoesCombate = new ArrayList<Integer>();
+    private ArrayList<Integer> caracteristicas = new ArrayList<Integer>();
+    private ArrayList<Integer> pericias = new ArrayList<Integer>();
+    private ArrayList<Integer> salvaguarda = new ArrayList<Integer>();
     //construtor
     public CharacterHuman(){
         this.characterHuman = reset();
